@@ -6,7 +6,7 @@ MAINTAINER Rath Pascal <rath@oxl.at>
 
 ARG HAPROXY_BRANCH
 
-ENV HAPROXY_SRC_URL https://github.com/haproxy/haproxy/archive/refs/heads/
+ENV HAPROXY_SRC_URL https://github.com/haproxy/haproxy/archive/refs/heads
 ENV HAPROXY_DOCKER_SRC_URL https://raw.githubusercontent.com/haproxytech/haproxy-docker-alpine/main/3.1/
 
 LABEL DEVELOPMENT BUILD
