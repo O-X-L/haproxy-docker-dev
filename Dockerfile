@@ -47,8 +47,8 @@ RUN apk add --no-cache ca-certificates jemalloc && \
     apk add --no-cache openssl zlib lua5.4-libs pcre2 && \
     rm -f /var/cache/apk/*
 
-ADD "${HAPROXY_DOCKER_SRC_URL}/docker-entrypoint.sh" '/docker-entrypoint.sh'
-ADD "${HAPROXY_DOCKER_SRC_URL}/haproxy.cfg" '/usr/local/etc/haproxy/haproxy.cfg'
+ADD --chmod=755 "${HAPROXY_DOCKER_SRC_URL}/docker-entrypoint.sh" '/docker-entrypoint.sh'
+ADD --chmod=644 "${HAPROXY_DOCKER_SRC_URL}/haproxy.cfg" '/usr/local/etc/haproxy/haproxy.cfg'
 
 STOPSIGNAL SIGUSR1
 
