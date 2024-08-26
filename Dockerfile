@@ -3,6 +3,7 @@ FROM alpine:latest
 MAINTAINER Rath Pascal <rath@oxl.at>
 
 # base source: https://github.com/haproxytech/haproxy-docker-alpine
+# source: https://github.com/O-X-L/haproxy-docker-dev
 
 ARG HAPROXY_BRANCH
 
